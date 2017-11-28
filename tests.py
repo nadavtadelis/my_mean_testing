@@ -37,9 +37,9 @@ def test_complex():
     assert obs == exp
 
 def test_numpy():
-    # testing with numpy 
+    # testing with numpy
     import numpy as np
-    num_list = np.random.uniform(0,10,10000)
+    num_list = np.random.uniform(0, 10, 10000)
     obs = mean(num_list)
     exp = np.mean(num_list)
-    assert obs == exp
+    np.testing.assert_almost_equal(obs, exp, decimal=10)
