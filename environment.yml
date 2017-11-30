@@ -1,11 +1,9 @@
-#language: python
-#python:
-#  - "3.6"
-#install:
-#  - pip install pytest
-#  - pip install numpy
-#script:
-#  - pytest tests.py
+#name: test-environment
+
+#dependencies:
+#  - python=3.6
+#  - numpy
+#  - pytest
 
 language: python
 
